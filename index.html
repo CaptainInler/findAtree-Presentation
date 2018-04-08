@@ -22,12 +22,33 @@
 		</script>
 	</head>
 	<body>
+
+
+	<!--Ablauf:-->
+	<!-- - ca. 7min Präsentation-->
+	<!-- - ca. 3min Fragen-->
+	<!-- - 2min Umbau-->
+
+
+	<!--Inhalt der Präsentation:-->
+	<!-- - Thema kurz erläutern-->
+	<!-- - Auf folgende Punkte eingehen-->
+		<!-- - Besonders gut gelöst-->
+		<!-- - Würden "wir" anders machen-->
+		<!-- - Was haben "wir" gelernt-->
+	<!-- - Kleine Demo-->
+
+
+
+
 		<div class="reveal">
 			<div class="slides">
 				<section>
 					<h1>findAtree</h1>
 					<img src="bilder/01_Baum.png" style="background-color:transparent;border: hidden; box-shadow: none">
 				</section>
+
+
 				<section>
 
 					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
@@ -35,12 +56,13 @@
 					</section>
 
 					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						gamification von opendata
+						<ul>
+							<li>gamification von opendata</li>
+							<li>geo-aspekt</li>
+						</ul>
 					</section>
 
-
 				</section>
-
 
 
 				<section>
@@ -49,41 +71,81 @@
 					</section>
 
 					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						angular 😅
+						<ul>
+							<li>angular 😅</li>
+							<li>esri javascript-api 😎</li>
+							<li>firebase 😈</li>
+						</ul>
 					</section>
+
+				</section>
+
+
+				<section>
 					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						esri javascript-api 😎
+						<h2>Besonders gut gelöst</h2>
 					</section>
+
+					<section data-markdown data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
+						<script type="text/template">
+							<h3>Authentifizierung mit Firebase</h3>
+
+
+							```
+							import {AngularFireAuth} from 'angularfire2/auth';
+
+
+							signInWithGithub() {
+								return this.authLoginPopup(
+									new firebase.auth.GithubAuthProvider()
+								);
+							}
+
+
+							```
+						</script>
+					</section>
+
+
+
+
 					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						firebase 😈
+						Responsiveness mit js statt mit css (wegen der Karte)
+					</section>
+
+
+				</section>
+
+
+				<section>
+					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
+						<h2>Würden "wir" anders machen</h2>
+					</section>
+
+					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
+						<ul>
+							<li></li>
+						</ul>
+
 					</section>
 				</section>
 
 
 				<section>
 					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						<h2>Das haben wir speziell gelöst</h2>
+						<h2>Was haben "wir" gelernt</h2>
 					</section>
 
 					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						Responsnes mit js statt mit css (wegen der Karte)
-					</section>
-				</section>
+						<ul>
+							<li>angular 😅</li>
+							<li>esri javascript-api 😆</li>
 
+							<li>Laden von >65'000 Bäumen in eine Karte dauert lange...</li>
 
-				<section>
-					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						<h2>das machte uns Mühe</h2>
-					</section>
-
-					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						esri javascript-api 😆
-					</section>
-					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						Laden der Daten (Anzahl Punkte >65'000)
-					</section>
-					<section data-background="bilder/01_Baum.png" data-background-size="auto 10%" data-background-position="top 20px right 20px">
-						Wissen und Teamwork
+							<li>Unterschiedlicher Wissensstand der teammitglieder macht es nicht einfacher</li>
+							<li>Arbeiten im Team ist anspruchsvoll</li>
+						</ul>
 					</section>
 				</section>
 
